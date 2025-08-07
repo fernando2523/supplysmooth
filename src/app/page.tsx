@@ -21,9 +21,8 @@ function Button({
   };
   return (
     <button
-      className={`${base} ${
-        variants[variant] || variants.default
-      } ${className}`}
+      className={`${base} ${variants[variant] || variants.default
+        } ${className}`}
     >
       {children}
     </button>
@@ -105,26 +104,66 @@ export default function Home() {
             Best Products
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mb-6">
-            {[1, 2, 3, 4].map((item) => (
-              <Card key={item} className="overflow-hidden">
-                <Image
-                  src={`/1.png`}
-                  alt="Produk"
-                  width={500}
-                  height={500}
-                  className="w-full object-cover"
-                />
-                <CardContent>
-                  <h4 className="font-semibold text-lg mb-2">Limited Items</h4>
-                  <p className="text-sm text-gray-600 mb-2">
-                    Shop everywhere with peace of mind
-                  </p>
-                  <Link href="https://shopee.co.id/supplysmooth">
-                    <Button variant="outline">Shop Now</Button>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
+            <Card className="overflow-hidden">
+              <Image
+                src={`/1.png`}
+                alt="Produk"
+                width={500}
+                height={500}
+                className="w-full object-cover"
+              />
+              <CardContent>
+                <h4 className="font-semibold text-lg mb-2">Worldwide Space White</h4>
+                <Link href="https://shopee.co.id/supplysmooth">
+                  <Button variant="outline">Shop Now</Button>
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <Image
+                src={`/2.png`}
+                alt="Produk"
+                width={500}
+                height={500}
+                className="w-full object-cover"
+              />
+              <CardContent>
+                <h4 className="font-semibold text-lg mb-2">Worldwide Space Black</h4>
+                <Link href="https://shopee.co.id/supplysmooth">
+                  <Button variant="outline">Shop Now</Button>
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <Image
+                src={`/3.png`}
+                alt="Produk"
+                width={500}
+                height={500}
+                className="w-full object-cover"
+              />
+              <CardContent>
+                <h4 className="font-semibold text-lg mb-2">Never Settle</h4>
+                <Link href="https://shopee.co.id/supplysmooth">
+                  <Button variant="outline">Shop Now</Button>
+                </Link>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <Image
+                src={`/4.png`}
+                alt="Produk"
+                width={500}
+                height={500}
+                className="w-full object-cover"
+              />
+              <CardContent>
+                <h4 className="font-semibold text-lg mb-2">She's Running Out</h4>
+                <Link href="https://shopee.co.id/supplysmooth">
+                  <Button variant="outline">Shop Now</Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
           <h3 className="text-2xl font-semibold mb-6 text-center">
             New Arrival
@@ -143,9 +182,6 @@ export default function Home() {
                   <h4 className="font-semibold text-lg mb-2">
                     Hot Product {item}
                   </h4>
-                  <p className="text-sm text-gray-600 mb-2">
-                    Shop everywhere with peace of mind
-                  </p>
                   <Link href="https://shopee.co.id/supplysmooth">
                     <Button variant="outline">Shop Now</Button>
                   </Link>
